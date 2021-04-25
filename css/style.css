@@ -18,12 +18,13 @@ body {
 	font-weight: 400;
 	color: #000000}
 
-h1, h2, h3, h4, h5, h6, {
-							color: #f2f2f2f2;
-							font-family: Raleway, sans-serif;
-							font-weight: 700;
-							line-height: 1.5;
-							margin: 0 0 0.625em 0;}
+h1,h2,h3,h4,h5,h6{
+	color: #f2f2f2f2;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	line-height: 1.5;
+	margin: 0 0 0.625em 0;}
+
 h1{ font-size: 2em;}
 h2{ font-size: 1.75em;}
 h3{font-size: 1.5em}
@@ -35,8 +36,7 @@ h5{font-size: 0.75em}
 	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin: 0 auto;
-}
+	margin: 0 auto;}
 
 nav a { text-decoration: none;
 	color: #000000; 
@@ -50,8 +50,7 @@ ul { list-style-type: none; }
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: right;
-}
+	align-items: right;}
 
 .menu li{ display: inline-flex; 
 	padding: 20px 0px 20px 30px;}
@@ -73,8 +72,7 @@ nav a:hover, nav a:active{ color: #0065FC;
 
 h1{
 	margin: 0px;
-	padding: 10px 0px;
-}
+	padding: 10px 0px;}
 
 p{ margin: 0px;
    padding-bottom: 10px; }
@@ -91,7 +89,6 @@ input{ border-radius: 10px;
 position: relative;
 display: flex;
 max-width: 300px;
-
 padding: 10px 10px 10px 0px;}
 
 .fa.fa-map-marker:before{ 
@@ -120,11 +117,10 @@ padding: 10px 10px 10px 0px;}
 
  .button {
  	border-radius: 50px;
- 	border: 2px #deebff solid
- }
+ 	border: 2px #deebff solid}
 
  .button:hover{ background-color: #deebff;
- 				color: #0065FC; }
+ 				color: #0065FC;}
 
  section {
  		background-color: #deebff;
@@ -136,8 +132,7 @@ padding: 10px 10px 10px 0px;}
  		flex-wrap: wrap;
  		flex-direction: row;
  		align-content: flex-start;
- 		align-items: flex-start;
- }
+ 		align-items: flex-start;}
 
  aside {background-color: #deebff;
  		border-radius: 30px;
@@ -145,23 +140,21 @@ padding: 10px 10px 10px 0px;}
  		margin: 10px 0px 10px 10px;
  		display: inline-flex;
  		flex-wrap: wrap;
- 		max-width: 300px;
- }
+ 		max-width: 300px;}
 
 .main{
 	max-width: 960px;
-	display: flex;
-}
+	display: flex;}
 
 h2{ padding: 10px;
 	margin: 5px;}
 
  h5{ flex: inline-block;
- 	 margin: 5px;
- 	  }
+ 	 margin: 5px;}
+
 .fa-star:before { color: #0065fc;
 			 padding: 1px;
-			 margin-bottom: 10px; }
+			 margin-bottom: 10px;}
 
 .fa-star.five:before{ color: #deebff }
 .fa-star.four:before{ color: #deebff }
@@ -179,8 +172,7 @@ h2{ padding: 10px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 150px 150px 150px;
 	grid-auto-rows: 3em;
-	grid-gap: 10px;
-}
+	grid-gap: 10px;}
 
 #Auberge{ grid-column: 1/2;}
 
@@ -197,8 +189,7 @@ h2{ padding: 10px;
 	width: 160px;
 	padding: 5px;
 	margin: 5px;
-	border-radius: 20px;
-}
+	border-radius: 20px;}
 
 .Marseille img {
 			display: inline-flex;
@@ -206,8 +197,7 @@ h2{ padding: 10px;
 			flex-direction: row;
 			height: 90px;
 			width: 160px;
-			border-radius: 20px 20px 0px 0px;
-}
+			border-radius: 20px 20px 0px 0px;}
 
 
 .fa-external-link-alt:before{
@@ -215,19 +205,18 @@ h2{ padding: 10px;
 	margin: 5px;
 	margin-left: 50px;
 	align-items: flex-end;
-	justify-content: space-between;
-}
+	justify-content: space-between;}
 
 #aside-header{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
-}
+	align-items: baseline;}
+
 .aside-popular{
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-}
+	flex-wrap: wrap;}
+
 .popular-hotels{
 	display: flex;
 	flex-wrap: wrap;
@@ -237,15 +226,14 @@ h2{ padding: 10px;
 	border-radius: 20px;
 	width: 290px;
 	padding: 5px;
-	margin: 5px 0px;
-}
+	margin: 5px 0px;}
+
  .popular-hotels img{
  			display: inline-flex;
 			flex-wrap: wrap;
 			height: 135px;
 			width: 125px;
-			border-radius: 20px 0px 0px 20px;
- }
+			border-radius: 20px 0px 0px 20px;}
 
 aside h5{ font-size: 1em; 
 		margin-left: 0px;}
@@ -253,8 +241,7 @@ aside h5{ font-size: 1em;
 .aside-info{ font-size: 0.75em; 
  			 padding: 0px 10px 10px 5px;
  			 align-items: left;	
- 			 justify-content: space-between;		 
- 			 }
+ 			 justify-content: space-between;}
 
 #Activities-Marseille{ max-width: 960px; 
 					   padding: 0px;
@@ -333,9 +320,7 @@ footer li{ padding:2px 0px; }
 
 #footer-1, #footer-2, #footer-3{
 		padding: 10px;
-		margin: 10px;
-
-}
+		margin: 10px;}
 
 /* MOBILE VERSION */
 
@@ -350,5 +335,6 @@ body.container {
 
 nav .menu ul { flex-direction: column; }
 
-nav ul li { text-align: center; }
+nav ul li { text-align: center;}
+
 }
