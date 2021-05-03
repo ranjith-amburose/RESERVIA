@@ -49,8 +49,7 @@ ul { list-style-type: none; }
 
 header {
 	display: flex;
-	justify-content: space-between;
-	align-items: right;}
+	justify-content: space-between;}
 
 .menu li{ display: inline-flex; 
 	padding: 20px 0px 20px 30px;}
@@ -74,6 +73,7 @@ h1{
 	margin: 0px;
 	padding: 10px 0px;}
 
+
 p{ margin: 0px;
    padding-bottom: 10px; }
 
@@ -82,8 +82,8 @@ input{ border-radius: 10px;
 	   border-color: #deebff;
 	   border-width: 2px;
 	   min-width: 300px;
-	   padding: 10px; 
-	   position: absolute;}
+	   padding: 10px;
+	  position: absolute;}
 
 #location{
 position: relative;
@@ -135,6 +135,17 @@ padding: 10px 10px 10px 0px;}
  		align-content: flex-start;
  		align-items: flex-start;}
 
+#accom-page {background-color: #deebff;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 10px 0px;
+	max-width: 960px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: flex-start;
+	align-items: flex-start;}
+
  aside {background-color: #deebff;
  		border-radius: 30px;
  		padding: 10px;
@@ -152,8 +163,12 @@ h2{ padding: 10px;
 
 h4{ padding: 20px 0px;;}
 
- h5{ flex: inline-block;
- 	 margin: 5px;}
+a h4:hover{ color: #0065fc;}
+
+ h5{ margin: 5px;}
+
+ .h5-like{ font-size: 1em;
+		padding: 10px 40px 0px 0px;}
 
 .fa-star:before { color: #0065fc;
 			 padding: 1px;
@@ -185,20 +200,54 @@ h4{ padding: 20px 0px;;}
 	flex-wrap: wrap;
 	align-content: flex-start;
 	background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 	width: 173px;
+	height: 175px;
 	padding: 5px;
 	margin: 5px;
 	border-radius: 20px;}
 
-.Marseille img {
+	.M-Hotel{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	width: 285px;
+	height: 250px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 20px;;
+	}
+
+.Marseille a img {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
 			height: 90px;
-			width: 200px;
+			width: 170px;
 			border-radius: 20px 20px 0px 0px;}
-		
+
+.M-Hotel a img{ display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 150px;
+	width: 285px;
+	border-radius: 20px 20px 0px 0px;}
+
+.M-Hotel a img:hover{ opacity: 75%;}
+
+.M-Hotel p { padding-right: 120px;
+	margin-left: 5px;
+			}
+
+.M-Hotel i { margin-left: 5px;}
+
+.font-a{ display: flex;
+		flex-wrap: wrap;
+		flex-direction: start;}
+
+.Marseille a img:hover{ opacity: 75%;}
 
 .fa-external-link-alt:before{
 	padding: 10px;
@@ -221,21 +270,23 @@ h4{ padding: 20px 0px;;}
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
 	background-color: #ffffff;
 	border-radius: 20px;
 	width: 280px;
-	padding: 5px;
+	padding: 5px 5px 0px 5px;
 	margin: 5px 0px 5px 5px;}
 
 #margin-bottom{ margin-bottom: 30px;}
 
- .popular-hotels img{
+ .popular-hotels a img{
  			display: inline-flex;
 			flex-wrap: wrap;
 			height: 135px;
 			width: 125px;
 			border-radius: 20px 0px 0px 20px;}
+
+.popular-hotels a img:hover{ opacity: 75%;}
 
 aside h5{ font-size: 1em; 
 		margin-left: 0px;}
@@ -258,6 +309,9 @@ aside h5{ font-size: 1em;
 				width: 215px;
 				border-radius: 20px 20px 0px 0px;} 
 
+
+#Activities img:hover { opacity: 75%;}
+
 #Activities{ display: inline-flex;
 			flex-wrap: wrap;
 			align-items: flex-start;
@@ -265,7 +319,7 @@ aside h5{ font-size: 1em;
 
 .Activities-Spot{
 	background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 	width: 220px;
 	padding: 5px;
 	margin: 5px;
@@ -300,6 +354,8 @@ display: flex;
 justify-content: space-around;
 align-items: flex-start; }
 
+footer a:hover{ color: #0065fc;}
+
 footer ul{ padding-left: 0px; }
 
 footer li{ padding:2px 0px; }
@@ -308,19 +364,36 @@ footer li{ padding:2px 0px; }
 		padding: 10px;
 		margin: 10px;}
 
-/* MOBILE VERSION */
+.container-signup{ max-width: 960px;}
 
-@media all and (max-width: 480px){
+#Signup { display: flex;
+		  flex-wrap: wrap;
+		  flex-direction: row;
+		  justify-content: center;
+		  align-items: center;
+		  align-content: flex-start;
+		  background-color: #deebff;
+		  border-radius: 20px;
+		  padding: 20px;
+		  width: 350px;
+		  height: 450px;
+		  text-align: center;}
 
-body.container {
-	max-width: 480px;
-	width: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 0 auto;}
+#Signup h2{ padding: 10px 0px;
+			margin: 10px 0px;}
 
-nav .menu ul { flex-direction: column; }
+#Signup p{ margin-bottom: 10px;}
 
-nav ul li { text-align: center;}
+#Signup input{position: relative;
+			  height: 20px;}
 
-}
+button{ background-color: #ffffff;
+		padding: 10px 20px;
+		margin: 10px 80px;
+		border-radius: 20%;
+		border: #0065fc solid 2px;
+		
+		}
+
+button:hover{ background-color: #0064fc;
+			  color: #ffffff;}
