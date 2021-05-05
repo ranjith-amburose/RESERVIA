@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
     <meta charset="utf8"> <!--Univeral Character Set 8bit encoding-->
-    <meta name="viewport" content="width=device width,initial scale=1"> <!--For Responsive-->
+    <meta name="viewport" content="width= device-width,initial-scale=1.0"> <!--For Responsive-->
     <meta name="Reservia" content=" find accommodations and activities in the city of your choice..."> <!-- For SEO -->
 
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Style sheet to personalize -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome integration-->
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/55e14b5752.js" crossorigin="anonymous"></script>
     </head>
@@ -15,37 +15,48 @@
             <a href="index.html" title="Home"><img id="logo" src="img/logo/Reservia@3x.png" alt="Logo"> </a>
         <nav class="menu">
             <ul>
-                <li><a id="one" href="accommodations.html">Accommodations</a></li>
+                <li><a id="one" color="green" href="accommodations.html">Accommodations</a></li>
                 <li><a  id="two" href="activities.html">Activities</a></li>
                 <li><a id="three" href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
         </header>
         <h1>Find a place for your dream vacation</h1>
-        <p>Downtown or in nature</p>
+        <p id="margin-large">Downtown or in nature</p>
         <input type="text" name="">
         <div id="location">	
             <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p id="search-place">Marseille, France</p>
+            <p id="search-place"><strong> Marseille, France</strong></p>
+            <p><i class="fas fa-search"></i></p>
             <p id="search-btn">Search</p>
         </div>  
         <nav class="sub-menu">
             <ul>
-                <li id="menu-filter">Filters</li>
-                <i class="fa fa-money" aria-hidden="true"></i>
-                <li class="button">Low cost</li>
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <li class="button">Family-freindly</li>
-                <i class="fa fa-heart" aria-hidden="true"></i>
-                <li class="button">Romantic</li>
-                <i class="fa fa-paw" aria-hidden="true"></i>
-                <li class="button">Pets allowed</li>
+            	
+            	<li id="menu-filter"><strong>Filters</strong></li>	
+          		<div>
+          			<i class="fa fa-money" aria-hidden="true"></i>
+                	<li class="button"><strong>Low cost</strong></li>
+          		</div>
+                <div>
+                	<i class="fa fa-users" aria-hidden="true"></i>
+                	<li class="button"><strong>Family-freindly</strong></li>
+                </div>
+                <div>
+                	<i class="fa fa-heart" aria-hidden="true"></i>
+                	<li class="button"><strong>Romantic</strong></li>
+                </div>
+                <div>
+                	<i class="fa fa-paw" aria-hidden="true"></i>
+                	<li class="button"><strong>Pets allowed</strong></li>
+                </div>
+                
             </ul>
         </nav>  
         
         <div id="info">
         <i class="fas fa-info"></i>
-        <p> More than 500 accommodations are available in this<br>city</p> 
+        <p> More than 500 accommodations are available in this <br> city</p> 
         </div>
         <div class="main">
         <section> 
@@ -54,7 +65,7 @@
             <div class="Marseille" id="Auberge">
                 <a href=""><img  src="img/hebergements/Auberge-la-cannebière.jpg" alt="Auberge la cannebière"></a>
                 <h5>Auberge La Cannebière</h5>
-                <p>Night starting at 25€</p>
+                <p>Night starting at <strong> 25€</strong></p>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -64,7 +75,7 @@
             <div class="Marseille" id="Port">
                 <a href=""><img  src="img/hebergements/Hotel du port.jpg" alt="Hotel du Port"></a>
                 <h5>Hotel du port</h5>
-                <p>Night starting at 52€</p>
+                <p>Night starting at <strong> 52€</strong></p>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -74,7 +85,7 @@
            <div class="Marseille" id="Mouettes">
                <a href=""><img  src="img/hebergements/Les Mouettes Hotel.jpg" alt="Les Mouettes Hotel"></a>
                <h5>Les Mouettes Hotel</h5>
-               <P>Night starting at 76€</P>
+               <P>Night starting at <strong> 76€</strong></P>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -84,7 +95,7 @@
            <div class="Marseille" id="Mer">
                <a href=""><img  src="img/hebergements/Hotel de la Mer.jpg" alt="Hotel de la Mer"></a>
                <h5>Hotel de la Mer</h5>
-               <p>Night starting at 46€</p>
+               <p>Night starting at <strong> 46€</strong></p>
                <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -94,7 +105,7 @@
            <div class="Marseille" id="Panier">
                <a href=""><img  src="img/hebergements/Auberge Le Panier.jpg" alt="Auberge Le Panier"></a>
                <h5>Auberge Le Panier</h5>
-               <p>Night starting at 23€</p> 
+               <p>Night starting at <strong> 23€</strong></p> 
                <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -104,7 +115,7 @@
            <div class="Marseille" id="Amina">
                <a href=""><img  src="img/hebergements/Hotel chez Amina.jpg" alt="Hotel chez Amina"></a>
                <h5>Hotel chez Amina</h5>
-               <p>Night starting at 96€</p>
+               <p>Night starting at <strong> 96€</strong></p>
                <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -124,7 +135,7 @@
             <a href=""><img src="img/hebergements/Morning Sun Hotel.jpg" alt="Morning Sun Hotel"></a>
             <div class="aside-info">
             <h5>Morning Sun Hotel</h5>
-            <p>Night startingat 128€</p>
+            <p>Night starting at <strong>128€</strong></p>
             <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -136,7 +147,7 @@
             <a href=""><img src="img/hebergements/Au coeur de l'eau Bed and Breakfast.jpg" alt="Au coeur de l'eau Bed and Breakfast"></a>
             <div class="aside-info">
             <h5>Au coeur de l'eau Bed <br> and Breakfast</h5>
-            <p>Night starting at 71€</p>
+            <p>Night starting at <strong>71€</strong></p>
             <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -148,12 +159,12 @@
             	<a href=""><img src="img/hebergements/Tout bleu et blanc Hotel.jpg" alt="Tout bleu et blanc Hotel"></a>
             	<div class="aside-info">
                 <h5>Tout bleu et blanc <br> Hotel</h5>
-                <p>Night starting at 68€</p>
+                <p>Night starting at <strong>68€</strong></p>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star five" aria-hidden="true"></i>
                 </div>
             </div>
         </div> <!-- Popular Container -->
@@ -171,7 +182,7 @@
                 <a href=""><img id="Pomegues" src="img/activities/Pomegues Fort.jpg" alt="Pomegues Fort"></a>
                 <h5>Pomèegues Fort</h5> 
             </div>
-            <div class="Activities-Spot-half">
+            <div class="Activities-Spot-half ">
                 <a href=""><img id="Frioul" src="img/activities/Frioul Island.jpg" alt="Frioul Island"></a>
                 <h5>Frioul Island</h5>
             </div>
@@ -197,7 +208,7 @@
             <h4>About</h4>
             <ul>
                <a href=""><li>Site Map</li></a>
-               <a href=""><li>Generat Terms and Conditions</li></a>
+               <a href=""><li>General Terms and Conditions</li></a>
                <a href=""><li>Data and Privacy</li></a>
             </ul>
         </div>
