@@ -18,7 +18,6 @@ body {
 	border: 0;
 	padding: 0px 10px;
 	position: relative;
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	line-height: 1.5;
 	font-weight: 400;
@@ -55,6 +54,7 @@ header { display: inline-flex;
 header nav ul{ list-style-type: none; 
 		 	 display: flex;
 		 	 padding: 10px;}
+
 
 	header li{ display: flex; 
 			   padding: 10px 25px;}
@@ -707,8 +707,8 @@ p{ margin: 0px;
    padding-bottom: 10px; }
 
 input{ border-radius: 10px;
-	   border-color: #deebff;
-	   border-width: 2px;
+	   border-color: #f2f2f2f2;
+	   border-width: 1px;
 	   min-width: 300px;
 	   padding: 10px;
 	  position: absolute;}
@@ -758,13 +758,13 @@ padding: 10px 10px 10px 0px;}
 
  .button {
  	border-radius: 50px;
- 	border: 2px #deebff solid}
+ 	border: 2px #f2f2f2f2 solid}
 
  .button:hover{ background-color: #deebff;
  				color: #0065FC;}
 
  section {
- 		background-color: #deebff;
+ 		background-color: #f2f2f2f2;
  		border-radius: 30px;
  		padding: 20px;
  		margin: 10px 0px;
@@ -775,7 +775,7 @@ padding: 10px 10px 10px 0px;}
  		align-content: flex-start;
  		align-items: flex-start;}
 
- aside {background-color: #deebff;
+ aside {background-color: #f2f2f2f2;
  		border-radius: 30px;
  		padding: 10px;
  		margin: 10px 0px 10px 10px;
@@ -951,7 +951,7 @@ aside h5{ font-size: 1em;
 footer{ 
 padding: 10px;
 margin: 10px;
-background-color: #deebff;
+background-color: #f2f2f2;
 display: flex;
 justify-content: space-around;
 align-items: flex-start; }
